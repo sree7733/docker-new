@@ -21,8 +21,8 @@ jobs:
       run:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --tag ${{secrets.DOCKER_USER}}/sree773/docker-git:latest
+      run: docker build . -t sree773/docker-git:now
     - name: Build the Docker image
       run: docker images
     - name: docker push
-      run: docker push ${{secrets.DOCKER_USER}}/sree773/docker-git
+      run: docker push sree773/docker-git:now
