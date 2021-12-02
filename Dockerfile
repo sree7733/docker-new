@@ -1,3 +1,3 @@
 FROM alpine
-CMD ["echo", "Hello dear friend!"]
+CMD ["echo", "Hello!"]
  
